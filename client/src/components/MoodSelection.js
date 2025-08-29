@@ -1,6 +1,5 @@
 "use client"
 import {BentoGrid,BentoGridItem} from "@/components/ui/bento-grid"
-import React from 'react';
 import { useRouter } from "next/navigation";
 
 const categories=[
@@ -30,7 +29,7 @@ const MoodSelection = () => {
 
   const handleMoodSelect = (category) => {
     localStorage.setItem('selectedMood', category);
-    navigate('/visual-choice');
+    router.push('/visualSelection');
   };
 
   return(
